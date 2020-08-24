@@ -1,0 +1,27 @@
+{
+    "name": "aldhix/altar",
+    "description": "AdminlTE Bootstrap Laravel Components",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aldhi Xar",
+            "email": "aldhi.x@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aldhix\\Altar\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aldhix\\Altar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Demo": "Aldhix\\Altar\\RouteDemo"
+            }
+        }
+    }
+}
