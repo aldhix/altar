@@ -3,7 +3,7 @@
 namespace Aldhix\Altar;
 use Route;
 
-class RouteDemo
+class Demo
 {
  
    public static function routes()

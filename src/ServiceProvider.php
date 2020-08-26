@@ -25,6 +25,7 @@ class ServiceProvider extends Service
     public function boot()
     {
         $this->loadViewsFrom(__DIR__.'/views/components', 'component');
+        $this->loadViewsFrom(__DIR__.'/views/master', 'alt');
 
         $this->publishes([
             __DIR__.'/views/altar' => resource_path('views/altar'),
@@ -50,5 +51,8 @@ class ServiceProvider extends Service
         Blade::component('component::table','alt-table');
         Blade::component('component::tabs-card','alt-tabs-card');
         Blade::component('component::textarea','alt-textarea');
+        Blade::component('component::sidebar','alt-sidebar');
+        Blade::component('component::navbar','alt-navbar');
+        Blade::component('component::navbar.menu','alt-navbar-menu');
     }
 }

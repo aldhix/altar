@@ -1,20 +1,35 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
-  <!-- Brand Logo -->
-  @altSidebarBrand
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <!-- Sidebar user panel (optional) -->
-   @altSidebarUser
-    <!-- Sidebar Menu -->
-    <nav class="mt-2">
-      <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent nav-flat" 
-      data-widget="treeview" role="menu" data-accordion="false">
-        <!-- Add icons to the links using the .nav-icon class
-             with font-awesome or any other icon font library -->
-        @altSidebarMenu
-      </ul>
-    </nav>
-    <!-- /.sidebar-menu -->
-  </div>
-  <!-- /.sidebar -->
-</aside>
+<x-slot name='logo'>
+	<a href="{{route('demo.index')}}" class="brand-link">
+		<img class="brand-image img-circle elevation-3" style="opacity: .8"
+		src="{{url('adminlte/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" />
+		<span class="brand-text font-weight-light">{{config('app.name')}}</span>
+	</a>
+</x-slot>
+
+<x-slot name="user">
+	<div class="image">
+		<img class="img-circle elevation-2"
+		 src="{{url('adminlte/dist/img/user2-160x160.jpg')}}" alt="User Image">
+	</div>
+	<div class="info">
+		<a href="#" class="d-block">Alexander Pierce</a>
+	</div>
+</x-slot>
+
+<x-slot name="nav">
+	<x-alt-sidebar-menu label="Dasboard" :href="route('demo.index')" icon="fas fa-tachometer-alt"  />
+
+	<li class="nav-header">COMPONENTS</li>
+	<x-alt-sidebar-menu label="Form" :href="route('demo.form')" icon="far fa-list-alt"  />
+	<x-alt-sidebar-menu label="Tabel" :href="route('demo.table')" icon="fas fa-th-list"  />
+
+	<li class="nav-header">SETTINGS</li>
+
+	<x-alt-sidebar-menu label="Users" is="user*" icon="fas fa-user-friends" :treeview="true">
+	  <x-alt-sidebar-submenu label="All User" href="#"/>
+	  <x-alt-sidebar-submenu label="Add New" href="#"/>
+	</x-alt-sidebar-menu>
+
+	<x-alt-sidebar-menu label="Simple Link" icon="fas fa-th" badge="New" />
+	<x-alt-sidebar-menu label="About" icon="fas fa-exclamation-circle" :href="route('demo.about')" />
+</x-slot>

@@ -1,6 +1,8 @@
-@extends('altar.layouts.app')
+@extends('alt::page')
 @section('title','About')
-@section('content-header','About')
+@section('heading')
+<i class="fas fa-exclamation-circle"></i> About
+@endsection
 @section('content')
 <div class="row">
 	<div class="col">

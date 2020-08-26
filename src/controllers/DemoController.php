@@ -14,17 +14,17 @@ class DemoController extends Controller
      */
     public function index()
     {
-        return view('altar.pages.dashboard');
+        return view('altar.demo.dashboard');
     }
 
     public function about()
     {
-    	return view('altar.pages.about');
+    	return view('altar.demo.about');
     }
 
     public function form()
     {
-    	return view('altar.pages.form');
+    	return view('altar.demo.form');
     }
 
     public function store(Request $request)
@@ -42,7 +42,7 @@ class DemoController extends Controller
 
     public function table()
     {
-    	return view('altar.pages.table');
+    	return view('altar.demo.table');
     }
 
     public function destroy($id)

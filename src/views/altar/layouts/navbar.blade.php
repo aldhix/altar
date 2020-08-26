@@ -1,30 +1,25 @@
-<nav class="main-header navbar navbar-expand navbar-dark">
- <!-- Left navbar links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
+<x-slot name="left">
+	<li class="nav-item">
       <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
     </li>
-  </ul>
-  <!-- Right navbar links -->
-  <ul class="navbar-nav ml-auto">
+     <x-alt-navbar-menu label="Home" href="#" />
+     <x-alt-navbar-menu label="Contact" href="#" />
+</x-slot>
 
-    <li class="nav-item dropdown">
-      <a class="nav-link" data-toggle="dropdown" href="#">
-        <i class="fas fa-users-cog"></i>
-      </a>
-      <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-        <a href="#" class="dropdown-item">
-          <i class="fas fa-user mr-2"></i> My Profile
-        </a>
-         <a href="{{ route('demo.about') }}" class="dropdown-item">
-          <i class="fas fa-exclamation-circle mr-2"></i> About
-        </a>
-        <div class="dropdown-divider"></div>
-        <a href="#" class="dropdown-item">
-          <i class="fas fa-sign-out-alt mr-2"></i> Logout
-        </a>
-      </div>
-    </li>
-
-  </ul>
-</nav>
+<x-slot name="right">
+	<x-alt-navbar-menu :dropdown="true" size="md">
+	    <x-slot name="label">
+	      <i class="fas fa-users-cog"></i> Username 
+	    </x-slot>
+	    <a href="#" class="dropdown-item">
+	      <i class="fas fa-user mr-2"></i> My Profile
+	    </a>
+	     <a href="{{ route('demo.about') }}" class="dropdown-item">
+	      <i class="fas fa-exclamation-circle mr-2"></i> About
+	    </a>
+	    <div class="dropdown-divider"></div>
+	    <a href="#" class="dropdown-item">
+	      <i class="fas fa-sign-out-alt mr-2"></i> Logout
+	    </a>
+	</x-alt-navbar-menu>
+</x-slot>

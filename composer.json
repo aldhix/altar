@@ -20,7 +20,7 @@
                 "Aldhix\\Altar\\ServiceProvider"
             ],
             "aliases": {
-                "Demo": "Aldhix\\Altar\\RouteDemo"
+                "Demo": "Aldhix\\Altar\\Libs\\Altar"
             }
         }
     }

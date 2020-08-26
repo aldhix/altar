@@ -1,6 +1,8 @@
-@extends('altar.layouts.app')
+@extends('alt::page')
 @section('title','Form')
-@section('content-header','Form')
+@section('heading')
+<i class="far fa-list-alt"></i> Form
+@endsection
 @section('content')
 <x-alt-alert>
   <h5><i class="icon fas fa-check"></i> Alert!</h5>

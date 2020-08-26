@@ -1,6 +1,6 @@
-@extends('altar.layouts.app')
+@extends('alt::page')
 @section('title','Table')
-@section('content-header','Table')
+@section('heading','Table')
 @section('content')
 <div class="row">
     <div class="col-12">
