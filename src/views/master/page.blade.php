@@ -48,7 +48,6 @@
     <div class="content">
       <div class="container-fluid pt-3">
     @endif
-    
         @yield('content')
       </div><!-- /.container-fluid -->
     </div>
