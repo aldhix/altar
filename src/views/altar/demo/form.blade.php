@@ -1,5 +1,5 @@
 @extends('alt::page')
-@section('title','Form')
+@section('title','AdminLTE 3 | Form')
 @section('heading')
 <i class="far fa-list-alt"></i> Form
 @endsection

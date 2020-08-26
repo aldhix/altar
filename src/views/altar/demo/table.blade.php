@@ -1,5 +1,5 @@
 @extends('alt::page')
-@section('title','Table')
+@section('title','AdminLTE 3 | Table')
 @section('heading','Table')
 @section('content')
 <div class="row">

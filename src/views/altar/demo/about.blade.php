@@ -1,5 +1,5 @@
 @extends('alt::page')
-@section('title','About')
+@section('title','AdminLTE 3 | About')
 @section('heading')
 <i class="fas fa-exclamation-circle"></i> About
 @endsection
