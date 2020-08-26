@@ -2,7 +2,7 @@
 	<a href="{{route('demo.index')}}" class="brand-link">
 		<img class="brand-image img-circle elevation-3" style="opacity: .8"
 		src="{{url('adminlte/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" />
-		<span class="brand-text font-weight-light">{{config('app.name')}}</span>
+		<span class="brand-text font-weight-light">AdminLTE 3</span>
 	</a>
 </x-slot>
 
