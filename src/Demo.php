@@ -18,7 +18,7 @@ class Demo
             Route::get('table','DemoController@table')->name('demo.table');
             Route::get('login','DemoController@login')->name('demo.login');
             Route::get('404','DemoController@error404')->name('demo.404');
-            Route::get('505','DemoController@error505')->name('demo.505');
+            Route::get('500','DemoController@error500')->name('demo.500');
             Route::delete('destroy/{id}','DemoController@destroy')->name('demo.destroy');
         });
    }

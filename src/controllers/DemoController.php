@@ -38,9 +38,9 @@ class DemoController extends Controller
         return abort(404);
     }
 
-    public function error505()
+    public function error500()
     {
-        return abort(505);
+        return abort(500);
     }
 
 

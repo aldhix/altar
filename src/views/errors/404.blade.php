@@ -1,4 +1,4 @@
-@extends('altar::page-extra',['title'=>'Page Not Found, Error 404','body_class'=>'error-page'])
+@extends('altar::page-extra',['title'=>'Error 404. Oops! Page not found','body_class'=>'error-page'])
 @section('content')
 <!-- Main content -->
     <section class="content">
