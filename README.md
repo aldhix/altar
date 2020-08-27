@@ -1,5 +1,10 @@
 # AdminLTE dengan Laravel 7
-Admin LTE dengan Component Laravel 7
+Admin LTE  dengan Component Laravel 7
+
+## Using
+- Laravel 7 ([https://laravel.com/](https://laravel.com/))
+- Bootstrap v4.4.1 ([https://getbootstrap.com/](https://getbootstrap.com/))
+- AdminLTE  v3.0.5 ([https://adminlte.io/](https://adminlte.io/))
 
 ## Instalasi
 Instal adminlte dengan composer :
@@ -10,5 +15,6 @@ Publish provider pada laravel :
 
 `php artisan vendor:publish --provider=Aldhix\Altar\ServiceProvider`
 
-Untuk mengujinya pada route tambahkan route demo `Demo::routes()`, buat server laravel ( `php artisan serv` ), kemudian ketikan pada browser http://localhost:8000/demo 
+Untuk mengujinya tambahkan route demo (`Demo::routes()`) di route web.php.
+Buat server laravel ( `php artisan serv` ), kemudian ketikan pada browser http://localhost:8000/demo 
 
