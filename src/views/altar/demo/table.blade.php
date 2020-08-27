@@ -1,5 +1,5 @@
-@extends('alt::page')
-@section('title','AdminLTE 3 | Table')
+@extends('altar::page',['title'=>'Table'])
+@section('title','Table')
 @section('heading','Table')
 @section('content')
 <div class="row">

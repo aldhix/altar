@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   @yield('meta')
-  <title>@yield('title')</title>
+  <title>{{ config('app.name').(isset($title) ? ' | '.$title : '') }}</title>
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{url('adminlte/plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Theme style -->
@@ -15,7 +15,7 @@
   <!-- Other CSS -->
   @stack('css')
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition {{ isset($body_class) ? $body_class : 'sidebar-mini layout-fixed layout-navbar-fixed' }}>
 <div class="wrapper">
   <!-- Navbar -->
   <x-alt-navbar>

@@ -1,5 +1,4 @@
-@extends('alt::page')
-@section('title','AdminLTE 3 | About')
+@extends('altar::page',['title'=>'About'])
 @section('heading')
 <i class="fas fa-exclamation-circle"></i> About
 @endsection

@@ -1,5 +1,4 @@
-@extends('alt::page')
-@section('title','AdminLTE 3 | Dahsboard')
+@extends('altar::page')
 @section('content')
 <!-- Small boxes (Stat box) -->
 <div class="row">

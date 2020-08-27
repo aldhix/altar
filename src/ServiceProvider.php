@@ -25,7 +25,7 @@ class ServiceProvider extends Service
     public function boot()
     {
         $this->loadViewsFrom(__DIR__.'/views/components', 'component');
-        $this->loadViewsFrom(__DIR__.'/views/master', 'alt');
+        $this->loadViewsFrom(__DIR__.'/views/master', 'altar');
 
         $this->publishes([
             __DIR__.'/views/altar' => resource_path('views/altar'),

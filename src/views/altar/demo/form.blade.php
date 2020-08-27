@@ -1,5 +1,4 @@
-@extends('alt::page')
-@section('title','AdminLTE 3 | Form')
+@extends('altar::page',['title'=>'Form'])
 @section('heading')
 <i class="far fa-list-alt"></i> Form
 @endsection
