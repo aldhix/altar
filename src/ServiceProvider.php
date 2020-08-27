@@ -29,6 +29,7 @@ class ServiceProvider extends Service
 
         $this->publishes([
             __DIR__.'/views/altar' => resource_path('views/altar'),
+            __DIR__.'/views/errors' => resource_path('views/errors'),
             __DIR__.'/controllers' => app_path('/Http/Controllers'),
             __DIR__.'/public' => public_path('/'),
         ]);

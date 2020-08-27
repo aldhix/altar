@@ -22,6 +22,29 @@ class DemoController extends Controller
     	return view('altar.demo.about');
     }
 
+    public function table()
+    {
+        return view('altar.demo.table');
+    }
+
+    public function login()
+    {
+         return view('altar.demo.login');
+    }
+
+
+    public function error404()
+    {
+        return abort(404);
+    }
+
+    public function error505()
+    {
+        return abort(505);
+    }
+
+
+
     public function form()
     {
     	return view('altar.demo.form');
@@ -40,10 +63,7 @@ class DemoController extends Controller
 		return 'Success';
     }
 
-    public function table()
-    {
-    	return view('altar.demo.table');
-    }
+    
 
     public function destroy($id)
     {
