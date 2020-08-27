@@ -1,7 +1,7 @@
 # AdminLTE dengan Laravel 7
 Admin LTE  dengan Component Laravel 7
 
-## Using
+## Use
 - Laravel 7 ([https://laravel.com/](https://laravel.com/))
 - Bootstrap v4.4.1 ([https://getbootstrap.com/](https://getbootstrap.com/))
 - AdminLTE  v3.0.5 ([https://adminlte.io/](https://adminlte.io/))
