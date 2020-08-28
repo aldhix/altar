@@ -55,5 +55,6 @@ class ServiceProvider extends Service
         Blade::component('component::sidebar','alt-sidebar');
         Blade::component('component::navbar','alt-navbar');
         Blade::component('component::navbar.menu','alt-navbar-menu');
+        Blade::component('component::input-img','alt-input-img');
     }
 }

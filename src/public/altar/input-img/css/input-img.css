@@ -1,0 +1,15 @@
+.profile-input .photo{
+  display: none;
+}
+.profile-input .img-preview{
+  width:160px;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: auto 160px;
+  background-position: center center;
+}
+
+.profile-input .img-remove{
+  float: right;
+  display: none;
+}

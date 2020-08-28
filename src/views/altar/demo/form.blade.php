@@ -29,6 +29,7 @@ $tab_active = !empty($tab) ? '?tab='.$tab : '?tab=current';
 <div class="row">
   <div class="col-6">
    @csrf()
+  <x-alt-input-img name="image"  id="gambar" inline="true" label=" " />
   <x-alt-input label="Nama" name="nama" inline="true" />
   <?php $option = [
       ['value'=>'L','label'=>'Laki-laki'],
@@ -84,3 +85,15 @@ $tab_active = !empty($tab) ? '?tab='.$tab : '?tab=current';
 </form>
 
 @endsection
+@push('css')
+ <link rel="stylesheet" href="{{url('altar/input-img/css/input-img.css')}}">
+@endpush
+
+@push('js')
+<script type="text/javascript" src="{{ url('altar/input-img/js/input-img.js') }}"></script>
+<script type="text/javascript">
+$(function(argument) {
+    $('#gambar').inputImg();
+})
+</script>
+@endpush
