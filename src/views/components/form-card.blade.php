@@ -1,15 +1,15 @@
 @props(['type'=>'primary','title'=>'','footer'=>''])
 
-<div class="card card-{{$type}}">
+<div class="card card-<?= $type ?>">
     <div class="card-header">
-      <h3 class="card-title">{{ $title }}</h3>
+      <h3 class="card-title"><?=  $title  ?></h3>
     </div>
-    <form {{$attributes}}>
+    <form <?=  $attributes  ?>>
     	<div class="card-body">
-    		{{$slot}}
+    		<?= $slot ?>
     	</div>
 	    <div class="card-footer">
-	    	{{$footer}}
+	    	<?= $footer ?>
 	    </div>
     </form>
 </div>

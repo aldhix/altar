@@ -6,6 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
    @yield('meta')
   <title>{{ config('app.name').(isset($title) ? ' | '.$title : '') }}</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="{{url('favicon.png')}}">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{{url('AdminLTE/plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Ionicons -->

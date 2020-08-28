@@ -1,15 +1,15 @@
 @props(['size'=>'sm','edit'=>null,'view'=>null,'delete'=>null])
 
 @if($view!=null)
-<a href={{$view}} class="text-secondary" title="View"><i class="far fa-eye mr-2"></i></a>
+<a href="<?= $view ?>" class="text-secondary" title="View"><i class="far fa-eye mr-2"></i></a>
 @endif
 
 @if($edit!=null)
-<a href="{{$edit}}" class="text-secondary" title="Edit"><i class="far fa-edit mr-2"></i></a>
+<a href="<?= $edit ?>" class="text-secondary" title="Edit"><i class="far fa-edit mr-2"></i></a>
 @endif
 
 @if($delete!=null)
-<a href="javascript:;" data-url="{{$delete}}" class="text-secondary btn-delete" title="Delete">
+<a href="javascript:;" data-url="<?= $delete ?>" class="text-secondary btn-delete" title="Delete">
 	<i class="far fa-trash-alt"></i>
 </a>
 

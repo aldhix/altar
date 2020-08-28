@@ -3,7 +3,7 @@
 <div class="card">
 @if($header != '' or $search)
   <div class="card-header">
-    {{ $header }}
+    <?=  $header  ?>
     <div class="card-tools">
     @if($search)
       <form action="?">
@@ -11,7 +11,7 @@
           <input type="text" name="keyword" 
           class="form-control float-right" 
           placeholder="Search" 
-          value="{{request()->keyword}}">
+          value="<?= request()->keyword ?>">
           <div class="input-group-append">
             <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
           </div>
@@ -26,20 +26,20 @@
       <thead>
       @if(!$headerCustom)
         <tr>
-          {{$thead}}
+          <?= $thead ?>
         </tr>
       @else
-        {{$thead}}
+        <?= $thead ?>
       @endif
       </thead>
       <tbody>
-        {{$slot}}
+        <?= $slot ?>
       </tbody>
     </table>    
   </div>
   @if($footer != '')
   <div class="card-footer clearfix p-1">
-    {{$footer}}
+    <?= $footer ?>
   </div>
   @endif
 </div>

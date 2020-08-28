@@ -25,29 +25,9 @@ $tab_active = !empty($tab) ? '?tab='.$tab : '?tab=current';
 <form method="post" action="{{route('demo.store')}}">
 <x-alt-tabs-card :data-tabs="$tabs" :active="$tab_active">
 
-@if($tab == 'current')
-<div class="row">
-  <div class="col-6">
-   @csrf()
-  <x-alt-input-img name="image"  id="gambar" inline="true" label=" " />
-  <x-alt-input label="Nama" name="nama" inline="true" />
-  <?php $option = [
-      ['value'=>'L','label'=>'Laki-laki'],
-      ['value'=>'P','label'=>'Perempuan'],
-    ]; ?>
-  <x-alt-select label="Jenis Kelamin" name="jenis_kelamin" :option="$option" inline="true" />
-  <x-alt-input label="Email" name="email" type="email" inline="true" />
-  <x-alt-input label="Password" name="password" type="password" inline="true" />
-  <x-alt-textarea label="Alamat" name="alamat" rows="5" inline="true" />
-  </div>
-</div>
-<x-slot name="footer">
-  <x-alt-button btn="primary">Simpan</x-alt-button>
-  <x-alt-button type="link" href="#">cancel</x-alt-button>
-</x-slot>
-@else
-
-<div class="row">
+@if($tab == 'input-group')
+  
+  <div class="row">
   <div class="col-6">
   @csrf()
   <x-alt-input label="Nama" name="nama">
@@ -80,6 +60,28 @@ $tab_active = !empty($tab) ? '?tab='.$tab : '?tab=current';
   <x-alt-button type="link" href="#">cancel</x-alt-button>
 </x-slot>
 
+@else
+
+<div class="row">
+  <div class="col-6">
+   @csrf()
+  <x-alt-input-img name="image" id="gambar" inline="true" label=" "  />
+  <x-alt-input label="Nama" name="nama" inline="true" />
+  <?php $option = [
+      ['value'=>'L','label'=>'Laki-laki'],
+      ['value'=>'P','label'=>'Perempuan'],
+    ]; ?>
+  <x-alt-select label="Jenis Kelamin" name="jenis_kelamin" :option="$option" inline="true" />
+  <x-alt-input label="Email" name="email" type="email" inline="true" />
+  <x-alt-input label="Password" name="password" type="password" inline="true" />
+  <x-alt-textarea label="Alamat" name="alamat" rows="5" inline="true" />
+  </div>
+</div>
+<x-slot name="footer">
+  <x-alt-button btn="primary">Simpan</x-alt-button>
+  <x-alt-button type="link" href="#">cancel</x-alt-button>
+</x-slot>
+
 @endif
 </x-alt-tabs-card>
 </form>
@@ -97,3 +99,4 @@ $(function(argument) {
 })
 </script>
 @endpush
+
