@@ -1,5 +1,5 @@
 # Altar
-Admin LTE 3 dengan Component Laravel 7
+AdminLTE 3 dengan Component Laravel 7
 
 ## Use
 - Laravel 7 ([https://laravel.com/](https://laravel.com/))
