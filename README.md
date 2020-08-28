@@ -15,6 +15,13 @@ Publish provider pada laravel :
 
 `php artisan vendor:publish --provider=Aldhix\Altar\ServiceProvider`
 
-Untuk mengujinya tambahkan route demo (`Demo::routes()`) di route web.php.
-Buat server laravel ( `php artisan serv` ), kemudian ketikan pada browser http://localhost:8000/demo 
+Untuk mengujinya tambahkan route demo di route web.php:
+
+`Demo::routes()`
+
+Buat server laravel :
+
+`php artisan serv`
+
+kemudian ketikan pada browser http://localhost:8000/demo 
 
