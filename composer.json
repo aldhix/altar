@@ -1,6 +1,10 @@
 {
     "name": "aldhix/altar",
     "description": "AdminlTE Bootstrap Laravel Components",
+    "keywords": [
+        "aldhix",
+        "altar"
+    ],
     "type": "library",
     "license": "MIT",
     "authors": [
